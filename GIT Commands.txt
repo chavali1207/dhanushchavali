@@ -1,0 +1,137 @@
+1) $git --version 
+	It is used to display the version of git.
+
+2) How to configure git?
+    $git config --global user.name 	sivadathu
+    $git config --global user.email 	sivadathugadi@gmail.com
+    $git config --global push.default	simple 
+
+3) $git config --list
+	It is used to show the configuration details of the git.
+
+4) $git init --bare
+	To create the bare repository (Central Repository)
+
+5) $git clone <remote> <local>
+	To copy the data from central repository to local repository.
+		ex: $git clone central.git newworkspace01
+
+6) $git add .
+	Add all files into the staging area.
+
+7) $git add filename
+	It will add that particular file into the staging area.
+
+8) $git status
+
+9) $git commit -m "message"
+
+10) $git log
+
+11)$git show commitid
+	It displays the content of the commitid.
+
+12)$git log --oneline
+	It shows all commit ids in oneline .
+
+13)$git log -number
+	It show specified number of commit ids.
+
+14)$git log --grep "word"
+
+15)$git log --oneline -number --grep "word" 
+
+16)$git log branchB branchA
+	Show the commits on branchA that are not on branchB.
+		ex: $git log slave01 master
+
+17)$git diff branchB branchA
+	Show the difference of what in branchA that are not in branchB.
+		ex: $git diff slave01 master
+
+
+19)$git branch
+	To show the list of branches.
+
+20)$git push
+	It push the data from local repository to central repository.
+
+21)$git pull
+	It will pull the data from central repository to local repository.
+
+22)$git push -u --all
+	To push all branches into the central repository.
+
+23)$git branch branchname
+	It will create the branch.
+
+24)$git checkout branchname
+	It goes to the specified branch,
+
+25)$git merge source destination
+
+26)$git cherry-pick commitid
+
+27)$git branch -D branchname
+	To delete the branch
+		ex: $gitbranch -D slave01
+
+28)$git branch -a
+	To show the list of branches, inclluding hidden branches.
+
+29)$git stash
+
+30)$git stash list
+
+31)$git stash apply stash@{0}
+
+32)$git stash clear
+
+33)$git stash show
+
+34)$git stash pop
+
+35)$git stash drop
+
+36)$git stash save
+
+37)$git reset <filename>
+
+38)$git reset --soft
+
+39)$git reset --mixed
+
+40)$git reset --hard
+
+41)$git clean -n
+
+42)$git clean -f
+
+43)$git tag -a <pattern> -m <messeage> commitid
+
+44)$git show <tagname>
+
+45)$git tag
+
+46)$git push --tags
+
+47)$git tag -d <pattern>
+
+48)$git branch 
+	It will show list of branches.
+
+49)$git checkout commitid
+	It will move to the specified commitid.
+
+50)$git branch -D branchname
+	It will delete the specified branch.
+
+51)$git diff
+ 
+52)$git diff --staged
+
+53)$git mv [original file] [renamedfile]
+
+54)$git log --follow filename
+	List version history for a file,including renames.
+		ex: $git log --follow 1.java
